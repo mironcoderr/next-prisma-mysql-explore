@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Breakfast",
+        "description": "Two eggs any style, choice of bacon or sausage, hash browns, and toast.",
+        "restaurantId": 1
+    },
+    {
+        "name": "Lunch",
+        "description": "Crisp romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+        "restaurantId": 1
+    },
+    {
+        "name": "Dinner",
+        "description": "Fresh Atlantic salmon fillet grilled to perfection, served with rice pilaf and steamed asparagus.",
+        "restaurantId": 1
+    }
+]
