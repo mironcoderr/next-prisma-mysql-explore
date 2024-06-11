@@ -1,0 +1,32 @@
+[
+    {
+        "name": "special burger",
+        "description": "Two eggs any style, choice of bacon or sausage, hash browns, and toast.",
+        "price": 25,
+        "menuId": 1
+    },
+    {
+        "name": "shingara somucha",
+        "description": "Crisp romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+        "price": 25,
+        "menuId": 1
+    },
+    {
+        "name": "dail and bel puri",
+        "description": "Fresh Atlantic salmon fillet grilled to perfection, served with rice pilaf and steamed asparagus.",
+        "price": 25,
+        "menuId": 1
+    },
+    {
+        "name": "shik kababab makhon",
+        "description": "Crisp romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+        "price": 25,
+        "menuId": 1
+    },
+    {
+        "name": "halim nehari tundol",
+        "description": "Fresh Atlantic salmon fillet grilled to perfection, served with rice pilaf and steamed asparagus.",
+        "price": 25,
+        "menuId": 1
+    }
+]

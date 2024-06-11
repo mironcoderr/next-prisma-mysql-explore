@@ -2,12 +2,12 @@ import { revalidatePath } from "next/cache"
 import { redirect } from 'next/navigation'
 
 export async function getAllRestaurant() {
-    const result = await fetch('http://localhost:3000/api/restaurants')
+    const result = await fetch(`${process.env.DOMAIN_URL}/api/restaurants`)
     return result.json()
 }
 
 export async function getSingleRestaurant(id) {
-    const result = await fetch(`http://localhost:3000/api/restaurants/${id}`, {
+    const result = await fetch(`${process.env.DOMAIN_URL}/api/restaurants/${id}`, {
         method: 'GET',
         cache: 'no-store',
         next: { tags: ["restaurants"] }
@@ -17,9 +17,10 @@ export async function getSingleRestaurant(id) {
 
 export async function postCreateRestaurant(formData) {  
     "use server"
+    
 
     try {
-        const response = await fetch('http://localhost:3000/api/restaurants', {
+        const response = await fetch(`${process.env.DOMAIN_URL}/api/restaurants`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -47,7 +48,7 @@ export async function putUpdateRestaurant(id, formData) {
     'use server'
 
     try {
-        await fetch(`http://localhost:3000/api/restaurants/${id}`, {
+        await fetch(`${process.env.DOMAIN_URL}/api/restaurants/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -69,7 +70,7 @@ export async function deleteRestaurant(id) {
     'use server'
 
     try {
-        await fetch(`http://localhost:3000/api/restaurants/${id}`, {
+        await fetch(`${process.env.DOMAIN_URL}/api/restaurants/${id}`, {
             method: 'DELETE',
         })
     }
